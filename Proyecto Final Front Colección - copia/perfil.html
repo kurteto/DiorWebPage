@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil de Usuario</title>
+  <link rel="shortcut icon" href="assets/images/DiorLogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/indexStyle.css">
+  <link rel="stylesheet" href="assets/css/pefil.css">
+  
+</head>
+<body>
+  <header class="navbar">
+    <!-- Logo Section -->
+    <div class="navbar-logo">
+      <img src="assets/images/DiorLogo.png" alt="Logo" class="logo-img">
+      <span class="logo-title Titulos">Chrstian Dior</span>
+    </div>
+
+    <!-- Hamburger Button -->
+    <button class="navbar-toggler" aria-label="Toggle Menu">
+      <span class="hamburger"></span>
+    </button>
+
+    <!-- Collapsible Sections -->
+    <div class="navbar-collapsible">
+      <!-- Navigation Links -->
+      <nav class="navbar-links">
+        <ul>
+          <li class="Titulos"><a href="index.html">Inicio</a></li>
+          <li class="Titulos"><a href="catalogo.html">Catálogo</a></li>
+          <li class="Titulos"><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- User and Cart Icons -->
+      <div class="navbar-icons">
+        <a href="perfil.html" class="icon-link"><img src="assets/images/user.png" alt="Usuario"></a>
+        <a href="carrito.html" class="icon-link"><img src="assets/images/shopping-cart.png" alt="Carrito"></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sección Perfil -->
+    <section id="perfil" class="section">
+      <h2>Tu Información</h2>
+      <p>Nombre: <span id="profile-name">Usuario</span></p>
+      <p>Email: <span id="profile-email">correo@ejemplo.com</span></p>
+      <p id="reminder">Próximo desfile en: <span id="days-remaining"></span> días</p>
+    </section>
+
+    <!-- Sección Calendario -->
+    <section id="calendario" class="section">
+      <h2>Calendario</h2>
+      <p>Selecciona una fecha para tu visita:</p>
+      <input type="date" id="calendar" />
+      <button id="reserve-date">Reservar</button>
+      <p id="confirmation" style="display: none; color: green;">Fecha reservada con éxito.</p>
+    </section>
+
+    <!-- Sección Favoritos -->
+    <section id="favoritos" class="section">
+      <h2>Productos Favoritos</h2>
+      <ul id="favorites-list">
+        <!-- Productos favoritos dinámicos -->
+      </ul>
+    </section>
+
+  
+  </main>
+ 
+  </div>
+  <script src="assets/script/sesion.js"></script>
+  <script src="assets/script/script.js"></script>
+  <script src="assets/script/perfil.js"></script>
+</body>
+</html>

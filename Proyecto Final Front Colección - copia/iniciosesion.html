@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christian Dior</title>
+  <link rel="shortcut icon" href="assets/images/DiorLogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/sesion.css">
+</head>
+<body>
+  <!-- Contenedor del video introductorio -->
+  <div class="video-container" id="intro-section">
+    <div class="overlay"></div>
+    <div class="intro-container">
+      <h1 class="title Titulos">Christian Dior</h1>
+      <br>
+      <p class="intro-text SubTitulos">Bienvenidos al mundo de la elegancia y el lujo, donde la moda se encuentra con el arte.</p>
+      <br>
+      <button class="start-button Botones" onclick="showLogin()">Comenzar</button>
+    </div>
+  </div>
+
+  <!-- Contenedor del login -->
+<div class="video-container" id="intro-section">
+
+    <div class="overlay"></div>
+  <div class="login-container" id="login-container" style="display: none;">
+    <!-- Formulario de inicio de sesión -->
+    <div class="login-box" id="login-box">
+        
+      <h2>Iniciar sesión</h2>
+      <br>
+      <p class="Textos">Bienenido para iniciar sesión digita la siguiente infomacion:</p>
+      <br>
+
+      <form id="login-form">
+        <div class="input-field">
+          <input type="text" placeholder="Teléfono,Usuario o Correo Electrónico " required>
+        </div>
+        <div class="input-field">
+          <input type="password" placeholder=" Contraseña" required>
+        </div>
+        <button type="submit" class="login-button Titulos">Iniciar sesión</button>
+      </form>
+      <br>
+      <p>
+        ¿No tienes una cuenta? 
+        <span class="underline-link" onclick="showSignUp()">Regístrate aquí</span>
+      </p>
+      
+
+    
+  <!-- Formulario de registro -->
+  <div id="signup-box" style="display: none;">
+    
+    <h2>Registrarse</h2>
+    <form id="signup-form">
+      <input type="text" placeholder="Nombres" required>
+      <input type="text" placeholder="Apellidos" required>
+      <input type="number" placeholder="Edad" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <input type="password" placeholder="Crear contraseña" required>
+      <button type="submit">Registrar</button>
+    </form>
+    <p id="signup-confirmation" style="display: none; color: green;"></p>
+  </div>
+
+
+    <!-- Botón para ir a la página principal -->
+    <div id="main-page-link" style="display: none;">
+      <a href="index.html" class="start-main-button">Comenzar</a>
+    </div>
+  </div>
+
+  <script src="assets/script/sesion.js"></script>
+</body>
+</html>

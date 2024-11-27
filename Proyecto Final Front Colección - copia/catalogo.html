@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/indexStyle.css">
+    <link rel="stylesheet" href="assets/css/catalogo.css">
+    <link rel="shortcut icon" href="assets/images/DiorLogo.png" type="image/x-icon">
+    <title>Catalogo</title>
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+    <!-- NAV BAR -->
+    <header class="navbar">
+      <!-- Logo Section -->
+      <div class="navbar-logo">
+        <img src="assets/images/DiorLogo.png" alt="Logo" class="logo-img">
+        <span class="logo-title Titulos">Chrstian Dior</span>
+      </div>
+  
+      <!-- Hamburger Button -->
+      <button class="navbar-toggler" aria-label="Toggle Menu">
+        <span class="hamburger"></span>
+      </button>
+  
+      <!-- Collapsible Sections -->
+      <div class="navbar-collapsible">
+        <!-- Navigation Links -->
+        <nav class="navbar-links">
+          <ul>
+            <li class="Titulos"><a href="index.html">Inicio</a></li>
+            <li class="Titulos"><a href="catalogo.html">Catálogo</a></li>
+            <li class="Titulos"><a href="index.html#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+        <!-- User and Cart Icons -->
+        <div class="navbar-icons">
+          <a href="perfil.html" class="icon-link"><img src="assets/images/user.png" alt="Usuario"></a>
+          <a href="carrito.html" class="icon-link"><img src="assets/images/shopping-cart.png" alt="Carrito"></a>
+        </div>
+      </div>
+    </header>
+  
+<!-- Info Section -->
+
+<section class="infoCatalogo">
+  <div class="catalogoContainer">
+    <h2 class="Titulos">Bienvenido a nuestro catálogo</h2>
+    <h4 class="Textos">Prendas y Bolsos de alta costura.</h4>
+  </div>
+</section>
+
+<!-- Carrusel Global -->
+<div id="carouselModal" class="carousel-modal">
+  <div class="carousel-content">
+    <span class="close" onclick="closeCarousel()">&times;</span>
+    <div class="carousel-images">
+      <img id="carouselImage" src="" alt="Imagen del producto">
+      <button class="prev" onclick="changeImage(-1)">&#9664;</button>
+      <button class="next" onclick="changeImage(1)">&#9654;</button>
+    </div>
+  </div>
+</div>
+
+     <!-- Catalogo -->
+  <section class="catalogo " id="catalogo">
+    <div class="producto">
+      <img src="assets/images/CatalogProduct1.png" alt="Producto 1" onclick="openCarousel(0, ['assets/images/CatalogProduct3.png', 'assets/images/CatalogProduct2.png', 'assets/images/CatalogProduct4.png'])">
+      <h3>Producto 1</h3>
+      <p>$20.00</p>
+      <button onclick="addToCart({ 
+        name: 'Producto 1', 
+        price: 20.00, 
+        image: 'assets/images/CatalogProduct1.png' 
+      })">Añadir al carrito</button>
+    </div>
+    <div class="producto">
+      <img src="assets/images/CatalogProduct2.png" alt="Producto 2" onclick="openCarousel(0, ['assets/images/CatalogProduct3.png', 'assets/images/CatalogProduct2.png', 'assets/images/CatalogProduct4.png'])">
+      <h3>Producto 2</h3>
+      <p>$25.00</p>
+      <button onclick="addToCart({ 
+        name: 'Producto 2', 
+        price: 25.00, 
+        image: 'assets/images/CatalogProduct2.png' 
+      })">Añadir al carrito</button>
+    </div>
+    <div class="producto ">
+      <img src="assets/images/CatalogProduct3.png" alt="Producto 3" onclick="openCarousel(0, ['assets/images/CatalogProduct3.png', 'assets/images/CatalogProduct2.png', 'assets/images/CatalogProduct4.png'])">
+      <h3>Producto 3</h3>
+      <p>$30.00</p>
+      <button onclick="addToCart({ 
+        name: 'Producto 3', 
+        price: 30.00, 
+        image: 'assets/images/CatalogProduct3.png' 
+      })">Añadir al carrito</button>
+    </div>
+    <div class="producto">
+      <img src="assets/images/CatalogProduct4.png" alt="Producto 4" onclick="openCarousel(0, ['assets/images/CatalogProduct3.png', 'assets/images/CatalogProduct2.png', 'assets/images/CatalogProduct4.png'])">
+      <h3>Producto 4</h3>
+      <p>$35.00</p>
+      <button onclick="addToCart({ 
+        name: 'Producto 4', 
+        price: 35.00, 
+        image: 'assets/images/CatalogProduct4.png' 
+      })">Añadir al carrito</button>
+    </div>
+    <div class="producto">
+      <img src="assets/images/CatalogProduct5.png" alt="Producto 5" onclick="openCarousel(0, ['assets/images/CatalogProduct3.png', 'assets/images/CatalogProduct2.png', 'assets/images/CatalogProduct4.png'])">
+      <h3>Producto 5</h3>
+      <p>$40.00</p>
+      <button onclick="addToCart({ 
+        name: 'Producto 5', 
+        price: 40.00, 
+        image: 'assets/images/CatalogProduct5.png' 
+      })">Añadir al carrito</button>
+    </div>
+    <div class="producto">
+      <img src="assets/images/CatalogProduct6.png" alt="Producto 6" onclick="openCarousel(0, ['assets/images/CatalogProduct3.png', 'assets/images/CatalogProduct2.png', 'assets/images/CatalogProduct4.png'])">
+      <h3>Producto 6</h3>
+      <p>$45.00</p>
+      <button onclick="addToCart({ 
+        name: 'Producto 6', 
+        price: 45.00, 
+        image: 'assets/images/CatalogProduct6.png' 
+      })">Añadir al carrito</button>
+    </div>
+    <div class="producto">
+      <img src="assets/images/CatalogProduct7.png" alt="Producto 6" onclick="openCarousel(0, ['assets/images/CatalogProduct3.png', 'assets/images/CatalogProduct2.png', 'assets/images/CatalogProduct4.png'])">
+      <h3>Producto 7</h3>
+      <p>$45.00</p>
+      <button onclick="addToCart({ 
+        name: 'Producto 7', 
+        price: 45.00, 
+        image: 'assets/images/CatalogProduct7.png' 
+      })">Añadir al carrito</button>
+    </div>
+    <div class="producto">
+      <img src="assets/images/CatalogProduct8.png" alt="Producto 6" onclick="openCarousel(0, ['assets/images/CatalogProduct3.png', 'assets/images/CatalogProduct2.png', 'assets/images/CatalogProduct4.png'])">
+      <h3>Producto 8</h3>
+      <p>$45.00</p>
+      <button onclick="addToCart({ 
+        name: 'Producto 8', 
+        price: 45.00, 
+        image: 'assets/images/CatalogProduct8.png' 
+      })">Añadir al carrito</button>
+    </div>
+    <div class="producto">
+      <img src="assets/images/CatalogProduct9.png" alt="Producto 6" onclick="openCarousel(0, ['assets/images/CatalogProduct3.png', 'assets/images/CatalogProduct2.png', 'assets/images/CatalogProduct4.png'])">
+      <h3>Producto 9</h3>
+      <p>$45.00</p>
+      <button onclick="addToCart({ 
+        name: 'Producto 9', 
+        price: 20.00, 
+        image: 'assets/images/CatalogProduct9.png' 
+      })">Añadir al carrito</button>
+    </div>
+    <div class="producto">
+      <img src="assets/images/CatalogProduct10.png" alt="Producto 6" onclick="openCarousel(0, ['assets/images/CatalogProduct3.png', 'assets/images/CatalogProduct2.png', 'assets/images/CatalogProduct4.png'])">
+      <h3>Producto 10</h3>
+      <p>$45.00</p>
+      <button onclick="addToCart({ 
+        name: 'Producto 10', 
+        price: 20.00, 
+        image: 'assets/images/CatalogProduct10.png' 
+      })">Añadir al carrito</button>
+    </div>
+    <div class="producto">
+      <img src="assets/images/CatalogProduct11.png" alt="Producto 6" onclick="openCarousel(0, ['assets/images/CatalogProduct3.png', 'assets/images/CatalogProduct2.png', 'assets/images/CatalogProduct4.png'])">
+      <h3>Producto 11</h3>
+      <p>$45.00</p>
+      <button onclick="addToCart({ 
+        name: 'Producto 11', 
+        price: 20.00, 
+        image: 'assets/images/CatalogProduct11.png' 
+      })">Añadir al carrito</button>
+    </div>
+    <div class="producto">
+      <img src="assets/images/CatalogProduct12.png" alt="Producto 6" onclick="openCarousel(0, ['assets/images/CatalogProduct3.png', 'assets/images/CatalogProduct2.png', 'assets/images/CatalogProduct4.png'])">
+      <h3>Producto 12</h3>
+      <p>$45.00</p>
+      <button onclick="addToCart({ 
+        name: 'Producto 12', 
+        price: 20.00, 
+        image: 'assets/images/CatalogProduct12.png' 
+      })">Añadir al carrito</button>
+    </div>
+  </section>
+<script src="assets/script/catalogo.js"></script>
+<script src="assets/script/script.js"></script>
+</body>
+</html>

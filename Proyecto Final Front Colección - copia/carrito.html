@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Carrito</title>
+    <link rel="shortcut icon" href="assets/images/shopping-cart.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/indexStyle.css">
+    <link rel="stylesheet" href="assets/css/carrito.css">
+</head>
+<body>
+<!-- NAVBAR -->
+
+    <!-- NAV BAR -->
+    <header class="navbar">
+        <!-- Logo Section -->
+        <div class="navbar-logo">
+          <img src="assets/images/DiorLogo.png" alt="Logo" class="logo-img">
+          <span class="logo-title Titulos">Chrstian Dior</span>
+        </div>
+    
+        <!-- Hamburger Button -->
+        <button class="navbar-toggler" aria-label="Toggle Menu">
+          <span class="hamburger"></span>
+        </button>
+    
+        <!-- Collapsible Sections -->
+        <div class="navbar-collapsible">
+          <!-- Navigation Links -->
+          <nav class="navbar-links">
+            <ul>
+              <li class="Titulos"><a href="index.html">Inicio</a></li>
+              <li class="Titulos"><a href="catalogo.html">Catálogo</a></li>
+              <li class="Titulos"><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+          </nav>
+          <!-- User and Cart Icons -->
+          <div class="navbar-icons">
+            <a href="perfil.html" class="icon-link"><img src="assets/images/user.png" alt="Usuario"></a>
+            <a href="carrito.html" class="icon-link"><img src="assets/images/shopping-cart.png" alt="Carrito"></a>
+          </div>
+        </div>
+      </header>
+
+<!-- Title -->
+<div class="cartTitle">
+    <h2>Tu Carrito</h2>
+    <img src="assets/images/shopping-cart.png" alt="">
+</div>
+
+
+<main>
+    <!-- Contenedor del Carrito -->
+    <div id="cartContainer" class="cart-container">
+      <!-- Aquí se agregarán los productos dinámicamente -->
+    </div>
+
+    <!-- Total y Acciones -->
+    <div class="cart-summary">
+      <p id="totalAmount">Total: $0.00</p>
+      <div class="summary-buttons">
+        <button id="buttoncomprar" onclick="comprarCart()">Comprar Carrito</button>
+        <button id="buttonvaciar" onclick="clearCart()">Vaciar Carrito</button>
+      </div>
+      
+    </div>
+  </main>
+
+<script src="assets/script/carrito.js"></script>
+<script src="assets/script/script.js"></script>
+</body>
+</html>
